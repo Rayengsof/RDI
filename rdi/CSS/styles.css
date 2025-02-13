@@ -205,13 +205,13 @@ footer p {
     }
 
     .h1 {
-        font-size: 50px;
+        font-size: 18px;
         margin-left: 0;
     }
 
     .logout-btn {
         width: 100%;
-        font-size: 50px;
+        font-size: 18px;
         margin-top: 10px;
     }
 
@@ -233,7 +233,7 @@ footer p {
     }
 
     footer {
-        font-size: 50px;
+        font-size: 18px;
     }
 }
 
@@ -245,7 +245,7 @@ footer p {
     }
 
     .h1 {
-        font-size: 18px;
+        font-size: 70px;
     }
 
     .logout-btn {
