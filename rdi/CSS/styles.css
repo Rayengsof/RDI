@@ -197,131 +197,190 @@ footer p {
 
 /* Media Queries */
 
-/* Para telas pequenas (smartphones e dispositivos com telas menores que 768px) */
-@media (max-width: 768px) {
-
-    /* Ajusta a barra superior */
+/* Para dispositivos móveis (320px — 480px) */
+@media (max-width: 480px) {
     header {
-        flex-direction: column; /* Torna a barra superior vertical */
-        align-items: flex-start;
-        padding: 10px;
-        width: 653px
+        flex-direction: column;
+        padding: 15px;
     }
 
-    /* Ajusta o título */
     .h1 {
-        font-size: 18px;
+        font-size: 14px;
         margin-left: 0;
     }
 
-    /* Ajuste do botão de logout */
     .logout-btn {
-        width: 100%; /* Faz o botão ocupar toda a largura disponível */
+        width: 100%;
+        font-size: 14px;
         margin-top: 10px;
     }
 
-    /* Ajusta a tabela */
     table {
-       
-        width: 50%;
-        margin-left: 15px;
-        position: absolute;
+        width: 95%;
     }
 
     table th, table td {
         padding: 8px;
     }
 
-    /* Ajuste dos botões */
     .btn {
-        width: 100%; /* Faz os botões ficarem com 100% da largura */
+        width: 100%;
         padding: 12px 0;
     }
 
-    /* Ajuste do modal */
     .modal-content {
-        width: 80%; /* Faz o modal ocupar uma maior parte da tela em dispositivos móveis */
+        width: 90%;
+    }
+
+    footer {
+        font-size: 12px;
     }
 }
 
-/* Para telas de até 500px de largura */
-@media (max-width: 500px) {
-
-    /* Ajusta o título */
-    .h1 {
-        font-size: 14px; /* Reduz o tamanho do título */
+/* Para tablets (481px — 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+    header {
+        flex-direction: row;
+        padding: 20px;
     }
 
-    /* Ajuste das informações do usuário e botão de logout */
-    .user-info {
-        flex-direction: column;
-        align-items: flex-start;
-        width: 100%;
+    .h1 {
+        font-size: 18px;
     }
 
     .logout-btn {
-        width: 100%; /* Ocupa toda a largura em telas pequenas */
-        padding: 12px;
+        width: 100px;
+    }
+
+    table {
+        width: 90%;
+    }
+
+    table th, table td {
+        padding: 10px;
+    }
+
+    .btn {
+        width: auto;
+        padding: 10px 20px;
+    }
+
+    .modal-content {
+        width: 70%;
+    }
+
+    footer {
         font-size: 14px;
     }
-
-    /* Ajuste das tabelas */
-    table {
-        width: 100%; /* Faz a tabela ocupar toda a largura disponível */
-    }
-
-    table th, table td {
-        padding: 6px;
-    }
-
-    /* Ajustes do modal */
-    .modal-content {
-        width: 90%; /* Modal ocupar quase toda a tela em dispositivos muito pequenos */
-    }
-
-    /* Ajustes no rodapé */
-    footer {
-        font-size: 12px; /* Menor tamanho de fonte no rodapé para telas pequenas */
-    }
 }
 
-/* Para telas muito pequenas (smartphones compactos, menos de 480px) */
-@media (max-width: 480px) {
-    
-    /* Ajusta ainda mais o título */
-    .h1 {
-        font-size: 12px; /* Tamanho do título em telas menores */
+/* Para telas pequenas e laptops (769px — 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    header {
+        flex-direction: row;
+        padding: 20px;
     }
 
-    /* Ajuste das informações do usuário e botão de logout */
-    .user-info {
-        flex-direction: column;
-        align-items: flex-start;
-        width: 100%;
+    .h1 {
+        font-size: 20px;
     }
 
     .logout-btn {
-        width: 100%; /* Ocupa toda a largura em telas pequenas */
-        padding: 12px;
-        font-size: 12px; /* Reduz o tamanho da fonte */
+        width: 120px;
     }
 
-    /* Ajuste das tabelas */
     table {
-        width: 100%; /* Faz a tabela ocupar toda a largura disponível */
+        width: 85%;
     }
 
     table th, table td {
-        padding: 5px; /* Ajuste no padding das células */
+        padding: 12px;
     }
 
-    /* Ajustes do modal */
+    .btn {
+        width: auto;
+        padding: 12px 20px;
+    }
+
     .modal-content {
-        width: 90%; /* Modal ocupar quase toda a tela em dispositivos muito pequenos */
+        width: 60%;
     }
 
-    /* Ajustes no rodapé */
     footer {
-        font-size: 10px; /* Menor tamanho de fonte no rodapé para telas muito pequenas */
+        font-size: 16px;
+    }
+}
+
+/* Para desktops e telas grandes (1025px — 1200px) */
+@media (min-width: 1025px) and (max-width: 1200px) {
+    header {
+        flex-direction: row;
+        padding: 25px;
+    }
+
+    .h1 {
+        font-size: 24px;
+    }
+
+    .logout-btn {
+        width: 150px;
+    }
+
+    table {
+        width: 80%;
+    }
+
+    table th, table td {
+        padding: 14px;
+    }
+
+    .btn {
+        width: auto;
+        padding: 14px 20px;
+    }
+
+    .modal-content {
+        width: 50%;
+    }
+
+    footer {
+        font-size: 18px;
+    }
+}
+
+/* Para telas muito grandes (1201px e acima) */
+@media (min-width: 1201px) {
+    header {
+        flex-direction: row;
+        padding: 30px;
+    }
+
+    .h1 {
+        font-size: 28px;
+    }
+
+    .logout-btn {
+        width: 180px;
+    }
+
+    table {
+        width: 75%;
+    }
+
+    table th, table td {
+        padding: 16px;
+    }
+
+    .btn {
+        width: auto;
+        padding: 16px 24px;
+    }
+
+    .modal-content {
+        width: 40%;
+    }
+
+    footer {
+        font-size: 20px;
     }
 }
