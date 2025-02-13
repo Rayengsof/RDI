@@ -15,3 +15,14 @@ jobs:
         password: Rafinha@25051991
         remoteDir: public_html/rdi
         localDir: .
+
+      - name: Configurar Git
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+
+      - name: Commit e Push dos arquivos
+        run: |
+          git add .
+          git commit -m "Atualizando arquivos do FTP"
+          git push origin main
