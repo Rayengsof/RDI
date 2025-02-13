@@ -1,22 +1,15 @@
-name: Deploy via FTP
-
-on:
-  push:
-    branches:
-      - main  # Branch que dispara o deploy
-
 jobs:
   deploy:
-    name: Deploy
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout do código
+      - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Deploy via FTP
-        uses: SamKirkland/FTP-Deploy-Action@4.3.0
+      - name: Deploy to FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.0  # Or latest version
         with:
+          local-dir: ./
+          server-dir: /files/public_html/rdi/
           server: ${{ secrets.HOST }}
           username: ${{ secrets.USER }}
           password: ${{ secrets.PASS }}
