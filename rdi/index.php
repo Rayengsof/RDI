@@ -37,7 +37,6 @@ if (isset($_POST['action'])) {
         // Redirecionar para evitar o reenvio do formulário ao atualizar a página
         header("Location: " . $_SERVER['PHP_SELF']);
         exit; // Evita que o código abaixo seja executado após o redirecionamento
-       // Codigo para editar os dados existentes
     } elseif ($_POST['action'] == 'edit') {
         $id = $_POST['id'];
         $descricao_produto = $_POST['descricao_produto'];
@@ -59,8 +58,8 @@ if (isset($_POST['action'])) {
 }
 
 // Consulta SQL para buscar dados da tabela tb_rdi
-        $sql = "SELECT id, descricao_produto, prefixo , cod_rm , fornecedor , mc_pc , data_entrega FROM tb_rdi";
-        $result = $conn->query($sql);
+$sql = "SELECT id, descricao_produto, prefixo , cod_rm , fornecedor , mc_pc , data_entrega FROM tb_rdi";
+$result = $conn->query($sql);
 ?>
 
 <!DOCTYPE html>
@@ -153,7 +152,7 @@ if (isset($_POST['action'])) {
         <button onclick="toggleChat()" id="closeChatBtn" class="btn btn-danger">X</button>
     </div>
     <div id="messages" class="chat-messages"></div>
-    <input type="text" id="messageInput" placeholder="Digite sua mensagem" />  
+    <input type="text" id="messageInput" placeholder="Digite sua mensagem" class="form-control mb-3" />  
     <button id="sendMessageButton" class="btn btn-success" onclick="sendMessage()">Enviar</button>
 </div>
 
@@ -176,6 +175,11 @@ if (isset($_POST['action'])) {
     </div>
 </div>
 
+<!-- Link para o Bootstrap JS e dependências -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 <!-- Script em javascript contendo logica do site -->
 <script src="JS/update.js"></script>
 <script src="JS/script.js"></script>
@@ -183,6 +187,3 @@ if (isset($_POST['action'])) {
 
 </body>
 </html>
-
-
-
