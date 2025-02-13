@@ -17,9 +17,9 @@ jobs:
       - name: FTP Deploy Locaweb
         uses: locaweb/ftp-deploy@1.0.0
         with:
-          host: ${{ secrets.HOST }}  # ftp.rafaeldutradev.com.br
-          user: ${{ secrets.USER }}  # rafaeldutradev1
-          password: ${{ secrets.PASS }}  # Rafinha@25051991
+          host: ${{ secrets.HOST }}  
+          user: ${{ secrets.USER }} 
+          password: ${{ secrets.PASS }}  
           localDir: "."  # O diretório local que contém os arquivos para enviar (substitua conforme necessário)
           remoteDir: "/files/public_html/rdi/"  # Diretório remoto no servidor FTP
-         # port: 21  # Porta do FTP (você indicou ser 21)
+         
