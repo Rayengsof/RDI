@@ -1,16 +1,25 @@
-  name: Deploy via ftp
-      on: push
-      jobs:
-        deploy:
-          name: Deploy
-          runs-on: ubuntu-latest
-          steps:
-          - uses: actions/checkout@v2
+name: Deploy via FTP
 
-          - name: FTP Deploy Locaweb
-            uses: locaweb/ftp-deploy@1.0.0
-            with:
-              host: ${{ secrets.HOST }} 
-              user: ${{ secrets.USER }}
-              password: ${{ secrets.PASS }}
-              localDir: "dist"
+on:
+  push:
+    branches:
+      - main  # Quando houver push na branch main, o deploy será acionado
+
+jobs:
+  deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout do repositório
+        uses: actions/checkout@v3
+
+      - name: Deploy via FTP
+        uses: SamKirkland/FTP-Deploy-Action@4.3.0
+        with:
+          server: ${{ secrets.FTP_SERVER }}      # Nome ou IP do servidor FTP
+          username: ${{ secrets.FTP_USER }}      # Usuário FTP
+          password: ${{ secrets.FTP_PASS }}      # Senha FTP
+          local-dir: ./                          # Diretório local (raiz do repositório)
+          server-dir: /public_html/              # Diretório remoto no servidor FTP
+          port: 21                               # Porta do FTP (padrão é 21, ajuste se necessário)
