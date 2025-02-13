@@ -3,7 +3,7 @@ name: Deploy via FTP
 on:
   push:
     branches:
-      - main  # Quando houver push na branch main, o deploy será acionado
+      - main  # Dispara o deploy ao fazer push na branch main
 
 jobs:
   deploy:
@@ -22,4 +22,4 @@ jobs:
           password: ${{ secrets.FTP_PASS }}      # Senha FTP
           local-dir: ./                          # Diretório local (raiz do repositório)
           server-dir: /public_html/              # Diretório remoto no servidor FTP
-          port: 21                               # Porta do FTP (padrão é 21, ajuste se necessário)
+          port: 21                               # Porta do FTP (padrão é 21)
