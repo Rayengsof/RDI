@@ -23,7 +23,7 @@ header {
     flex-grow: 1;
     text-align: center;
     margin-left: 200px;
-    color: blue;
+    
 }
 
 /* Contêiner para as informações do usuário e o botão */
@@ -221,7 +221,7 @@ footer p {
     .h1 {
         font-size: 18px;
         margin-left: 0;
-        color:green;
+        
     }
 
     .logout-btn {
@@ -261,8 +261,8 @@ footer p {
     }
 
     .h1 {
-        font-size: 70px;
-        color:yellow;
+        font-size: 18px;
+       
     }
 
     .logout-btn {
@@ -299,8 +299,8 @@ footer p {
     }
 
     .h1 {
-        font-size: 120px;
-        color: red;
+        font-size: 20px;
+        
     }
 
     .logout-btn {
@@ -338,7 +338,7 @@ footer p {
 
     .h1 {
         font-size: 24px;
-        color:pink;
+        
     }
 
     .logout-btn {
@@ -376,7 +376,7 @@ footer p {
 
     .h1 {
         font-size: 28px;
-        color:cyan;
+       
     }
 
     .logout-btn {
