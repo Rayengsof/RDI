@@ -7,44 +7,35 @@ body {
 
 /* Barra superior */
 header {
-        display: flex;
-        justify-content: space-between; /* Centraliza o conteúdo (texto) */
-        align-items: center; /* Alinha verticalmente no centro */
-        background-color: #a1a3a5; 
-        color: white;
-        padding: 10px 10px;
-        position: relative;   
-  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #a1a3a5;
+    color: white;
+    padding: 10px 10px;
+    position: relative;
 }
 
- 
- 
-
-/* Título centralizado */ 
 .h1 {
     margin: 0;
-    flex-grow: 1; /* Faz o h1 ocupar o máximo de espaço disponível */
+    flex-grow: 1;
     text-align: center;
     margin-left: 200px;
 }
 
-/* Contêiner para as informações do usuário e o botão */
 .user-info {
     display: flex;
-    align-items: center; /* Alinha os itens verticalmente no centro */
+    align-items: center;
 }
 
-/* Nome do usuário alinhado à esquerda */
 .align-left {
     margin: 0;
-    padding-right: 10px; /* Espaço entre o nome e o botão */
+    padding-right: 10px;
     text-align: left;
-      
 }
 
-/* Estilos do botão de logout */
 .logout-btn {
-    background-color: #f44336; /* Cor vermelha */
+    background-color: #f44336;
     color: white;
     border: none;
     border-radius: 15px;
@@ -53,41 +44,34 @@ header {
     transition: background-color 0.3s ease;
     padding: 10px 20px;
     width: 100px;
-} 
-
-/* Hover para o botão */
-.logout-btn:hover {
-    background-color: #e53935; /* Cor mais escura ao passar o mouse */
 }
 
-
+.logout-btn:hover {
+    background-color: #e53935;
+}
 
 .align-right {
     margin: 0;
-    text-align: right; /* Alinha o texto à direita */
-    margin-left: auto; /* Empurra para a direita se houver outros elementos ao lado */
+    text-align: right;
+    margin-left: auto;
 }
 
-
-
-
-
 #btnAdd {
-  width:20%;  
+    width: 20%;
 }
 
 #headerImage {
-     position: absolute; /* Permite que a imagem seja posicionada fora do fluxo normal */
-        left: 20px; /* Distância da borda direita */
-        height: 70px; /* Altura da imagem */
-        width: auto; /* Ajusta a largura automaticamente */
+    position: absolute;
+    left: 20px;
+    height: 70px;
+    width: auto;
 }
 
 /* Tabela */
 table {
     width: 80%;
     margin: 20px auto;
-    border-collapse: collapse;    
+    border-collapse: collapse;
     background-color: white;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -97,7 +81,7 @@ table th, table td {
     text-align: left;
     border-bottom: 1px solid #ddd;
 }
-  
+
 table th {
     background-color: #8b8a8a;
     color: white;
@@ -145,8 +129,7 @@ table th {
     padding: 20px;
     border-radius: 4px;
     width: 40%;
-  position: relative;
-  
+    position: relative;
 }
 
 .modal input {
@@ -169,40 +152,114 @@ table th {
 }
 
 .close {
-    position: absolute;  /* Posiciona o botão em relação ao modal-content */
-    top: 10px;           /* Distância do topo */
-    right: 10px;         /* Distância da direita */
-    background-color: #dc3545;  /* Cor de fundo vermelho */
-    color: white;        /* Cor do texto */
-    border: none;        /* Remove a borda */
-    border-radius: 50%;  /* Faz o botão ter formato circular */
-    width: 30px;         /* Largura do botão */
-    height: 30px;        /* Altura do botão */
-    display: flex;       /* Flexbox para centralizar o 'X' */
-    justify-content: center;  /* Centraliza o 'X' horizontalmente */
-    align-items: center;      /* Centraliza o 'X' verticalmente */
-    font-size: 18px;          /* Tamanho do 'X' */
-    cursor: pointer;         /* Indica que é clicável */
-} 
- 
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    cursor: pointer;
+}
+
 .close:hover {
-    background-color: #c82333; /* Cor de fundo quando passar o mouse */
+    background-color: #c82333;
 }
 
 /* Estilo do rodapé */
 footer {
-    background-color: #333; /* Cor de fundo do rodapé */
-    color: white;           /* Cor do texto */
-    text-align: center;     /* Centraliza o texto */
-    padding: 10px 0;        /* Espaçamento interno do rodapé */
-    position: fixed;        /* Fixa o rodapé na parte inferior */
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
     left: 0;
-    bottom: 0;              /* Fixa o rodapé no fundo da página */
-    width: 100%;            /* Largura do rodapé */
-    font-size: 14px;        /* Tamanho da fonte */
+    bottom: 0;
+    width: 100%;
+    font-size: 14px;
 }
 
-/* Estilo para o texto no rodapé */
 footer p {
-    margin: 0;              /* Remove a margem para não ter espaçamento extra */
+    margin: 0;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    .h1 {
+        margin-left: 100px;
+    }
+
+    #headerImage {
+        left: 10px;
+        height: 50px;
+    }
+
+    table {
+        width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Barra superior */
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .h1 {
+        margin-left: 0;
+        font-size: 24px;
+    }
+
+    /* Ajuste na tabela */
+    table {
+        width: 95%;
+    }
+
+    table th, table td {
+        padding: 8px;
+    }
+
+    /* Botão de logout */
+    .logout-btn {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    /* Ajustes no rodapé */
+    footer {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Ajustes finais para telas pequenas */
+    header {
+        padding: 8px;
+    }
+
+    .logout-btn {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    table {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    table th, table td {
+        padding: 6px;
+    }
+
+    .modal-content {
+        width: 90%;
+    }
 }
