@@ -1,0 +1,208 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e3e3e3;
+}
+
+/* Barra superior */
+header {
+        display: flex;
+        justify-content: space-between; /* Centraliza o conteúdo (texto) */
+        align-items: center; /* Alinha verticalmente no centro */
+        background-color: #a1a3a5; 
+        color: white;
+        padding: 10px 10px;
+        position: relative;   
+  
+}
+
+ 
+ 
+
+/* Título centralizado */ 
+.h1 {
+    margin: 0;
+    flex-grow: 1; /* Faz o h1 ocupar o máximo de espaço disponível */
+    text-align: center;
+    margin-left: 200px;
+}
+
+/* Contêiner para as informações do usuário e o botão */
+.user-info {
+    display: flex;
+    align-items: center; /* Alinha os itens verticalmente no centro */
+}
+
+/* Nome do usuário alinhado à esquerda */
+.align-left {
+    margin: 0;
+    padding-right: 10px; /* Espaço entre o nome e o botão */
+    text-align: left;
+      
+}
+
+/* Estilos do botão de logout */
+.logout-btn {
+    background-color: #f44336; /* Cor vermelha */
+    color: white;
+    border: none;
+    border-radius: 15px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    padding: 10px 20px;
+    width: 100px;
+} 
+
+/* Hover para o botão */
+.logout-btn:hover {
+    background-color: #e53935; /* Cor mais escura ao passar o mouse */
+}
+
+
+
+.align-right {
+    margin: 0;
+    text-align: right; /* Alinha o texto à direita */
+    margin-left: auto; /* Empurra para a direita se houver outros elementos ao lado */
+}
+
+
+
+
+
+#btnAdd {
+  width:20%;  
+}
+
+#headerImage {
+     position: absolute; /* Permite que a imagem seja posicionada fora do fluxo normal */
+        left: 20px; /* Distância da borda direita */
+        height: 70px; /* Altura da imagem */
+        width: auto; /* Ajusta a largura automaticamente */
+}
+
+/* Tabela */
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;    
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+table th, table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+  
+table th {
+    background-color: #8b8a8a;
+    color: white;
+}
+
+/* Botões */
+.btn {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.btn:hover {
+    background-color: #218838;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+}
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding-top: 50px;
+    text-align: center;
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: auto;
+    padding: 20px;
+    border-radius: 4px;
+    width: 40%;
+  position: relative;
+  
+}
+
+.modal input {
+    padding: 10px;
+    margin: 5px;
+    width: 90%;
+}
+
+.modal button {
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.modal button.close {
+    background-color: #dc3545;
+}
+
+.close {
+    position: absolute;  /* Posiciona o botão em relação ao modal-content */
+    top: 10px;           /* Distância do topo */
+    right: 10px;         /* Distância da direita */
+    background-color: #dc3545;  /* Cor de fundo vermelho */
+    color: white;        /* Cor do texto */
+    border: none;        /* Remove a borda */
+    border-radius: 50%;  /* Faz o botão ter formato circular */
+    width: 30px;         /* Largura do botão */
+    height: 30px;        /* Altura do botão */
+    display: flex;       /* Flexbox para centralizar o 'X' */
+    justify-content: center;  /* Centraliza o 'X' horizontalmente */
+    align-items: center;      /* Centraliza o 'X' verticalmente */
+    font-size: 18px;          /* Tamanho do 'X' */
+    cursor: pointer;         /* Indica que é clicável */
+} 
+ 
+.close:hover {
+    background-color: #c82333; /* Cor de fundo quando passar o mouse */
+}
+
+/* Estilo do rodapé */
+footer {
+    background-color: #333; /* Cor de fundo do rodapé */
+    color: white;           /* Cor do texto */
+    text-align: center;     /* Centraliza o texto */
+    padding: 10px 0;        /* Espaçamento interno do rodapé */
+    position: fixed;        /* Fixa o rodapé na parte inferior */
+    left: 0;
+    bottom: 0;              /* Fixa o rodapé no fundo da página */
+    width: 100%;            /* Largura do rodapé */
+    font-size: 14px;        /* Tamanho da fonte */
+}
+
+/* Estilo para o texto no rodapé */
+footer p {
+    margin: 0;              /* Remove a margem para não ter espaçamento extra */
+}
