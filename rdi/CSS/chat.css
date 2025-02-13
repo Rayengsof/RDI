@@ -15,6 +15,7 @@
     transition: all 0.3s ease;
 }
 
+/* Ícone dentro do botão */
 .chat-button img {
     width: 30px;
     height: 30px;
@@ -23,7 +24,7 @@
 /* Caixa do chat */
 .chat-box {
     position: fixed;
-    bottom: 80px;
+    bottom: 80px; /* Ajustando para não sobrepor o botão */
     right: 10px;
     width: 320px;
     height: 420px;
@@ -38,6 +39,7 @@
     transition: all 0.3s ease;
 }
 
+/* Cabeçalho da caixa de chat */
 .chat-header {
     display: flex;
     justify-content: space-between;
@@ -47,17 +49,19 @@
     margin-bottom: 10px;
 }
 
+/* Título do chat */
 #chatTitle {
     font-size: 18px;
     font-weight: bold;
     color: #333;
 }
 
+/* Botão de fechar */
 #closeChatBtn {
     background-color: #ff6f61;
     color: white;
     border: none;
-    padding: 9px 0px 5px 0px;
+        padding: 9px 0px 5px 0px;
     border-radius: 50%;
     cursor: pointer;
     width: 25px;
@@ -68,15 +72,17 @@
     background-color: #e25547;
 }
 
+/* Mensagens no chat */
 .chat-messages {
     flex: 1;
     overflow-y: auto;
     margin-bottom: 10px;
-    height: 70%;
+    height: 70%; /* Ajustando o tamanho da área de mensagens */
     font-size: 14px;
     color: #555;
 }
 
+/* Caixa de mensagem */
 .chat-message {
     margin: 8px 0;
     padding: 10px;
@@ -85,10 +91,12 @@
     word-wrap: break-word;
 }
 
+/* Mensagem não lida */
 .chat-message.unread-message {
     background-color: #f1f1f1;
 }
 
+/* Input de mensagem */
 input[type="text"] {
     width: 100%;
     padding: 10px;
@@ -99,6 +107,7 @@ input[type="text"] {
     box-sizing: border-box;
 }
 
+/* Botão de envio */
 button {
     width: 100%;
     padding: 12px;
@@ -116,13 +125,15 @@ button:hover {
     background-color: #218838;
 }
 
+/* Notificação de nova mensagem no botão */
 .chat-button.new-message {
     background-color: #dc3545;
     box-shadow: 0 0 15px rgba(255, 0, 0, 0.5);
 }
 
+/* Estilo para o botão de logout */
 .logout-btn {
-    background-color: #f44336;
+    background-color: #f44336; /* Cor vermelha */
     color: white;
     border: none;
     border-radius: 15px;
@@ -130,9 +141,10 @@ button:hover {
     cursor: pointer;
     transition: background-color 0.3s ease;
     padding: 10px 20px;
-    margin-left: 10px;
+    margin-left: 10px; /* Espaçamento à esquerda para não grudar no nome */
 }
 
+/* Hover effect */
 .logout-btn:hover {
     background-color: #d32f2f;
 }
@@ -140,10 +152,10 @@ button:hover {
 /* Estilo para o efeito de piscar no botão de chat */
 @keyframes blink {
     0% {
-        background-color: #FF6347;
+        background-color: #FF6347; /* Cor de destaque */
     }
     50% {
-        background-color: #FF4500;
+        background-color: #FF4500; /* Cor de destaque mais intensa */
     }
     100% {
         background-color: #FF6347;
@@ -151,112 +163,5 @@ button:hover {
 }
 
 .blinking-button {
-    animation: blink 1s infinite;
-}
-
-/* Media Queries */
-@media (max-width: 1200px) {
-    .chat-box {
-        width: 280px;
-        height: 380px;
-    }
-
-    .chat-button {
-        bottom: 60px;
-        right: 10px;
-        width: 50px;
-        height: 50px;
-    }
-
-    .chat-button img {
-        width: 25px;
-        height: 25px;
-    }
-
-    #chatTitle {
-        font-size: 16px;
-    }
-
-    input[type="text"] {
-        font-size: 13px;
-    }
-
-    button {
-        font-size: 14px;
-    }
-}
-
-@media (max-width: 768px) {
-    .chat-button {
-        bottom: 40px;
-        right: 10px;
-        width: 50px;
-        height: 50px;
-    }
-
-    .chat-button img {
-        width: 25px;
-        height: 25px;
-    }
-
-    .chat-box {
-        width: 90%;
-        height: 350px;
-        bottom: 80px;
-    }
-
-    .chat-header {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    #chatTitle {
-        font-size: 14px;
-    }
-
-    input[type="text"] {
-        font-size: 12px;
-    }
-
-    button {
-        font-size: 14px;
-    }
-}
-
-@media (max-width: 480px) {
-    .chat-button {
-        bottom: 30px;
-        right: 10px;
-        width: 45px;
-        height: 45px;
-    }
-
-    .chat-button img {
-        width: 22px;
-        height: 22px;
-    }
-
-    .chat-box {
-        width: 100%;
-        height: 300px;
-        bottom: 70px;
-    }
-
-    .chat-header {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 5px;
-    }
-
-    #chatTitle {
-        font-size: 14px;
-    }
-
-    input[type="text"] {
-        font-size: 12px;
-    }
-
-    button {
-        font-size: 14px;
-    }
+    animation: blink 1s infinite; /* Faz o botão piscar a cada 1 segundo */
 }
