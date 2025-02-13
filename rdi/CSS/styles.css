@@ -1,3 +1,4 @@
+/* Ajuste para a fonte padrão e o background */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -12,9 +13,9 @@ header {
     align-items: center;
     background-color: #a1a3a5;
     color: white;
-    padding: 10px 10px;
+    padding: 10px 15px;
     position: relative;
-    flex-wrap: wrap; /* Permite quebra de linha quando necessário */
+    flex-wrap: wrap;
 }
 
 .h1 {
@@ -57,10 +58,13 @@ header {
     margin-left: auto;
 }
 
+/* Botão para adicionar itens no RDI */
 #btnAdd {
     width: 20%;
+    margin: 20px auto;
 }
 
+/* Estilo da imagem do cabeçalho */
 #headerImage {
     position: absolute;
     left: 20px;
@@ -70,19 +74,19 @@ header {
 
 /* Tabela */
 table {
-    width: 90%; /* Ajuste da largura para uma melhor responsividade */
+    width: 90%;
     margin: 20px auto;
     border-collapse: collapse;
     background-color: white;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    table-layout: fixed; /* Garante que o conteúdo da tabela não ultrapasse os limites */
+    table-layout: fixed;
 }
 
 table th, table td {
     padding: 12px;
     text-align: left;
     border-bottom: 1px solid #ddd;
-    word-wrap: break-word; /* Quebra palavras grandes */
+    word-wrap: break-word;
 }
 
 table th {
@@ -90,7 +94,7 @@ table th {
     color: white;
 }
 
-/* Botões */
+/* Botões do Bootstrap, ajustados para customização */
 .btn {
     padding: 10px 20px;
     background-color: #28a745;
@@ -98,6 +102,8 @@ table th {
     border: none;
     cursor: pointer;
     margin: 5px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
 }
 
 .btn:hover {
@@ -154,6 +160,7 @@ table th {
     background-color: #dc3545;
 }
 
+/* Botão de fechar do modal */
 .close {
     position: absolute;
     top: 10px;
@@ -197,7 +204,7 @@ footer p {
 /* Para dispositivos maiores que 1200px */
 @media (max-width: 1200px) {
     .h1 {
-        font-size: 22px; /* Ajuste de fonte */
+        font-size: 22px;
     }
 
     #headerImage {
@@ -206,13 +213,12 @@ footer p {
     }
 
     table {
-        width: 90%; /* Ajuste da largura da tabela */
+        width: 90%;
     }
 }
 
 /* Para tablets e celulares maiores */
 @media (max-width: 768px) {
-    /* Barra superior */
     header {
         flex-direction: column;
         align-items: flex-start;
@@ -224,7 +230,6 @@ footer p {
         font-size: 24px;
     }
 
-    /* Ajuste na tabela */
     table {
         width: 95%;
     }
@@ -233,13 +238,11 @@ footer p {
         padding: 8px;
     }
 
-    /* Botão de logout */
     .logout-btn {
         width: 100%;
         margin-top: 10px;
     }
 
-    /* Ajustes no rodapé */
     footer {
         font-size: 12px;
     }
@@ -247,7 +250,6 @@ footer p {
 
 /* Para telas menores (celulares pequenos) */
 @media (max-width: 480px) {
-    /* Ajustes finais para telas pequenas */
     header {
         padding: 8px;
         width: 100%;
