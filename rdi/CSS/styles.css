@@ -249,6 +249,7 @@ footer p {
     .logout-btn {
         width: 50%;
         font-size: 14px;
+        margin-left: 400px;
     }
     .img {
          margin: 10px 0;
