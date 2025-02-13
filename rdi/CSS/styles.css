@@ -203,7 +203,20 @@ footer p {
     header {
         flex-direction: column;
         padding: 15px;
+        width: 540px;
     }
+    #btnAdd {
+    width: 50%;
+    margin-left: 150px;
+    }
+    .align-left {
+    margin: 0;
+    padding-right: 10px;
+    text-align: left;
+    position: absolute;
+    margin-left: 300px;
+    margin-top: 15px;
+}
 
     .h1 {
         font-size: 18px;
@@ -215,6 +228,7 @@ footer p {
         width: 100%;
         font-size: 18px;
         margin-top: 10px;
+        margin-left: 450px;
     }
 
     table {
