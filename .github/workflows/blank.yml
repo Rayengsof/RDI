@@ -13,4 +13,5 @@ jobs:
         host: ftp.rafaeldutradev.com.br
         user: rafaeldutradev1
         password: Rafinha@25051991
+        remoteDir: public_html/rdi
         localDir: .
