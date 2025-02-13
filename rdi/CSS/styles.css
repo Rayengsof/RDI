@@ -203,7 +203,7 @@ footer p {
     header {
         flex-direction: column;
         padding: 15px;
-        width: 540px;
+        width: 100%;
     }
     #btnAdd {
     width: 50%;
