@@ -222,7 +222,10 @@ footer p {
 
     /* Ajusta a tabela */
     table {
-        width: 95%; /* Ajusta a largura da tabela para caber melhor em telas pequenas */
+       
+        width: 50%;
+        margin-left: 15px;
+        position: absolute;
     }
 
     table th, table td {
