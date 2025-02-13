@@ -17,8 +17,8 @@ jobs:
       - name: Deploy via FTP
         uses: SamKirkland/FTP-Deploy-Action@4.3.0
         with:
-          server: ${{ secrets.FTP_SERVER }}  # Configure no GitHub Secrets
-          username: ${{ secrets.FTP_USER }}
-          password: ${{ secrets.FTP_PASS }}
+          host: ${{ secrets.HOST }} 
+          user: ${{ secrets.USER }}
+          password: ${{ secrets.PASS }}
           local-dir: ./  # Todos os arquivos do repositório
           server-dir: /public_html/  # Diretório do servidor onde os arquivos serão enviados
