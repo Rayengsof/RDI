@@ -57,114 +57,162 @@ $conn->close();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login - RDI</title>
     <link rel="stylesheet" href="CSS/styles.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f7f7f7;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-        }
+   <style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f7f7f7;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
 
+    .login-container {
+        background-color: #fff;
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        max-width: 400px;
+        text-align: center;
+    }
+
+    .login-container h2 {
+        margin-bottom: 20px;
+        font-size: 24px;
+        color: #333;
+    }
+
+    .login-container input {
+        width: 100%;
+        padding: 12px;
+        margin-bottom: 10px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        font-size: 14px;
+    }
+
+    .login-container button {
+        width: 100%;
+        padding: 12px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+    .login-container button:hover {
+        background-color: #0056b3;
+    }
+
+    .login-container .register-btn {
+        margin-top: 10px;
+        font-size: 14px;
+        color: #007bff;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    .login-container .register-btn:hover {
+        text-decoration: underline;
+    }
+
+    /* Modal */
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.4);
+        padding-top: 50px;
+    }
+
+    .modal-content {
+        background-color: #fefefe;
+        margin: 5% auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%;
+        max-width: 400px;
+        border-radius: 8px;
+    }
+
+    .close {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    /* Mensagens de erro */
+    .error-message {
+        color: red;
+        font-size: 14px;
+        margin-top: 10px;
+    }
+
+    /* Media Queries para responsividade */
+    @media (max-width: 768px) {
         .login-container {
-            background-color: #fff;
-            padding: 30px;
-            border-radius: 12px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            width: 100%;
-            max-width: 400px;
-            text-align: center;
+            padding: 20px;
+            max-width: 90%;
         }
 
         .login-container h2 {
-            margin-bottom: 20px;
-            font-size: 24px;
-            color: #333;
+            font-size: 20px;
         }
 
-        .login-container input {
-            width: 100%;
-            padding: 12px;
-            margin-bottom: 10px;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            font-size: 14px;
-        }
-
+        .login-container input,
         .login-container button {
-            width: 100%;
-            padding: 12px;
-            background-color: #007bff;
-            color: white;
-            border: none;
-            border-radius: 8px;
-            cursor: pointer;
-            font-size: 16px;
-        }
-
-        .login-container button:hover {
-            background-color: #0056b3;
+            font-size: 15px;
+            padding: 10px;
         }
 
         .login-container .register-btn {
-            margin-top: 10px;
+            font-size: 12px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .login-container {
+            padding: 15px;
+            max-width: 90%;
+        }
+
+        .login-container h2 {
+            font-size: 18px;
+        }
+
+        .login-container input,
+        .login-container button {
             font-size: 14px;
-            color: #007bff;
-            background: none;
-            border: none;
-            cursor: pointer;
+            padding: 8px;
         }
 
-        .login-container .register-btn:hover {
-            text-decoration: underline;
-        }
-
-        /* Modal */
-        .modal {
-            display: none;
-            position: fixed;
-            z-index: 1;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.4);
-            padding-top: 50px;
+        .login-container .register-btn {
+            font-size: 12px;
         }
 
         .modal-content {
-            background-color: #fefefe;
-            margin: 5% auto;
-            padding: 20px;
-            border: 1px solid #888;
-            width: 80%;
-            max-width: 400px;
-            border-radius: 8px;
+            width: 90%;
         }
+    }
+</style>
 
-        .close {
-            color: #aaa;
-            float: right;
-            font-size: 28px;
-            font-weight: bold;
-        }
-
-        .close:hover,
-        .close:focus {
-            color: black;
-            text-decoration: none;
-            cursor: pointer;
-        }
-
-        /* Mensagens de erro */
-        .error-message {
-            color: red;
-            font-size: 14px;
-            margin-top: 10px;
-        }
-    </style>
 </head>
 <body>
 
