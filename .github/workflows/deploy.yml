@@ -22,4 +22,4 @@ jobs:
           password: ${{ secrets.PASS }}  # Rafinha@25051991
           localDir: "."  # O diretório local que contém os arquivos para enviar (substitua conforme necessário)
           remoteDir: "/files/public_html/rdi/"  # Diretório remoto no servidor FTP
-          port: 21  # Porta do FTP (você indicou ser 21)
+         # port: 21  # Porta do FTP (você indicou ser 21)
