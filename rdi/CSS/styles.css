@@ -5,6 +5,10 @@ body {
     background-color: #e3e3e3;
 }
 
+html {
+    touch-action: manipulation; /* Desabilita o zoom por gestos */
+}
+
 /* Barra superior */
 header {
     display: flex;
