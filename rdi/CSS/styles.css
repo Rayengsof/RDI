@@ -243,11 +243,15 @@ footer p {
     /* Ajustes finais para telas pequenas */
     header {
         padding: 8px;
+        width: 130%;
     }
 
     .logout-btn {
-        width: 100%;
+        width: 50%;
         font-size: 14px;
+    }
+    .img {
+         margin: 10px 0;
     }
 
     table {
