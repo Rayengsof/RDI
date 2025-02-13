@@ -85,7 +85,7 @@ $conn->close();
     }
 
     .login-container input {
-        width: 100%;
+        width: 90%;
         padding: 12px;
         margin-bottom: 10px;
         border: 1px solid #ddd;
