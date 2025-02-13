@@ -76,11 +76,12 @@ header {
 
 /* Tabela */
 table {
-    width: 80%;
+    width: 100%; /* Definindo 100% para garantir que ocupe toda a largura da tela */
     margin: 20px auto;
     border-collapse: collapse;
     background-color: white;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow-x: auto; /* Permite rolar horizontalmente em telas pequenas */
 }
 
 table th, table td {
@@ -232,18 +233,16 @@ footer p {
     }
 
     
-       table {
-    width: 100%; /* Definindo 100% para garantir que ocupe toda a largura da tela */
-    margin: 20px auto;
-    border-collapse: collapse;
-    background-color: white;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    overflow-x: auto;
+    
+   table {
+        width: 100%; /* Garantir que a tabela use 100% da largura da tela */
+        overflow-x: auto; /* Adicionar rolagem horizontal se necessário */
     }
 
     table th, table td {
-        padding: 8px;
+        padding: 6px; /* Ajustando o padding para caber melhor na tela */
     }
+   
 
     .btn {
         width: 100%;
