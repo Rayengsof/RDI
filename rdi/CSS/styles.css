@@ -208,7 +208,7 @@ footer p {
     header {
         flex-direction: column;
         padding: 15px;
-        width: 100%;
+        width: 175%;
     }
     #btnAdd {
     width: 50%;
@@ -219,7 +219,7 @@ footer p {
     padding-right: 10px;
     text-align: left;
     position: absolute;
-    margin-left: 300px;
+    margin-left: 350px;
     margin-top: 15px;
 }
 
@@ -233,7 +233,7 @@ footer p {
         width: 100%;
         font-size: 18px;
         margin-top: 10px;
-        margin-left: 450px;
+        margin-left: 500px;
     }
 
     
