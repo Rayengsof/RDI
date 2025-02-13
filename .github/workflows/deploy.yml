@@ -3,7 +3,7 @@ name: Deploy via FTP
 on:
   push:
     branches:
-      - main  # ou a branch que você deseja usar
+      - main  # Branch que dispara o deploy
 
 jobs:
   deploy:
@@ -11,15 +11,15 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
-        name: Checkout repository
+      - name: Checkout do código
+        uses: actions/checkout@v3
 
-      - name: FTP Deploy Locaweb
-        uses: locaweb/ftp-deploy@1.0.0
+      - name: Deploy via FTP
+        uses: SamKirkland/FTP-Deploy-Action@4.3.0
         with:
-          host: ${{ secrets.HOST }}  
-          user: ${{ secrets.USER }} 
-          password: ${{ secrets.PASS }}  
-          localDir: "."  # O diretório local que contém os arquivos para enviar (substitua conforme necessário)
-          remoteDir: "/files/public_html/rdi/"  # Diretório remoto no servidor FTP
-         
+          server: ${{ secrets.HOST }}
+          username: ${{ secrets.USER }}
+          password: ${{ secrets.PASS }}
+          local-dir: "./"
+          server-dir: "/files/public_html/rdi/"
+          port: 21
