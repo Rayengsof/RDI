@@ -3,7 +3,7 @@ name: Deploy via FTP
 on:
   push:
     branches:
-      - main  # Define a branch que acionará o deploy
+      - main  # Quando houver push na branch main, o deploy será acionado
 
 jobs:
   deploy:
@@ -17,8 +17,9 @@ jobs:
       - name: Deploy via FTP
         uses: SamKirkland/FTP-Deploy-Action@4.3.0
         with:
-          host: ${{ secrets.HOST }} 
-          user: ${{ secrets.USER }}
-          password: ${{ secrets.PASS }}
-          local-dir: ./  # Todos os arquivos do repositório
-          server-dir: /public_html/  # Diretório do servidor onde os arquivos serão enviados
+          server: ${{ secrets.FTP_SERVER }}      # Nome ou IP do servidor FTP
+          username: ${{ secrets.FTP_USER }}      # Usuário FTP
+          password: ${{ secrets.FTP_PASS }}      # Senha FTP
+          local-dir: ./                          # Diretório local (raiz do repositório)
+          server-dir: /public_html/              # Diretório remoto no servidor FTP
+          port: 21                               # Porta do FTP (padrão é 21, ajuste se necessário)
