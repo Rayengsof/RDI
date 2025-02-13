@@ -241,10 +241,11 @@ footer p {
    table {
         width: 100%; /* Garantir que a tabela use 100% da largura da tela */
         overflow-x: auto; /* Adicionar rolagem horizontal se necessário */
+        margin: 10px;
     }
 
     table th, table td {
-        padding: 6px; /* Ajustando o padding para caber melhor na tela */
+        padding: 5px; /* Ajustando o padding para caber melhor na tela */
     }
    
 
