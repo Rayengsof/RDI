@@ -205,37 +205,45 @@ footer p {
 
 /* Para dispositivos móveis (320px — 480px) */
 @media (max-width: 480px) {
+    /* Ajustar o cabeçalho */
     header {
         flex-direction: column;
-        padding: 15px;
-        width: 175%;
+        padding: 10px;
+        width: 100%; /* Corrige a largura do header */
     }
-    #btnAdd {
-    width: 50%;
-    margin-left: 150px;
-    }
-    .align-left {
-    margin: 0;
-    padding-right: 10px;
-    text-align: left;
-    position: absolute;
-    margin-left: 350px;
-    margin-top: 15px;
-}
 
     .h1 {
         font-size: 18px;
         margin-left: 0;
-        
     }
 
-    .logout-btn {
-        width: 100%;
-        font-size: 18px;
-        margin-top: 10px;
-        margin-left: 500px;
+    /* Ajustar a tabela */
+    table {
+        width: 100%; /* Garante que a tabela ocupe toda a largura da tela */
+        margin: 10px 0; /* Ajusta a margem para não ficar colado nas bordas */
+        overflow-x: auto; /* Permite rolagem horizontal */
+        box-sizing: border-box; /* Garante que o padding não afete a largura */
     }
 
+    table th, table td {
+        padding: 8px; /* Ajusta o padding para caber melhor em telas pequenas */
+        font-size: 12px; /* Reduz o tamanho da fonte */
+    }
+
+    .btn {
+        width: 100%; /* Garante que os botões fiquem lado a lado e não empilhem */
+        padding: 12px 0;
+        margin: 5px 0; /* Garante que os botões tenham espaço suficiente */
+    }
+
+    .modal-content {
+        width: 90%; /* Ajusta o modal para dispositivos móveis */
+    }
+
+    footer {
+        font-size: 16px; /* Ajusta o tamanho da fonte do rodapé */
+    }
+}
     
     
    table {
