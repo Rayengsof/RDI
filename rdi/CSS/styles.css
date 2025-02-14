@@ -91,15 +91,21 @@ table {
     overflow-x: auto; /* Permite rolar horizontalmente em telas pequenas */
 }
 
-table th, table td {
+ table td {
     padding: 2px;
-    text-align: left;
+    text-align: -webkit-center;
     border-bottom: 1px solid #ddd;
+    border-radius: 9px
+    
 }
 
 table th {
+    padding: 2px;
+    text-align: -webkit-center;
+    border-bottom: 1px solid #ddd;
     background-color: #8b8a8a;
     color: white;
+    border-radius: 9px 0px 9px 0px;
 }
 
 /* Botões */
