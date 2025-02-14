@@ -227,7 +227,7 @@ footer p {
 
     table th, table td {
         padding: 8px; /* Ajusta o padding para caber melhor em telas pequenas */
-        font-size: 12px; /* Reduz o tamanho da fonte */
+        font-size: 11px; /* Reduz o tamanho da fonte */
     }
 
     .btn {
@@ -236,6 +236,7 @@ footer p {
         margin: 3px 3PX;
         width: 60%;
         height: 40%;
+        font-size: 10px;
     }
 
     .modal-content {
