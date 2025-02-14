@@ -230,6 +230,7 @@ footer p {
 /* Para dispositivos móveis (320px — 480px) */
 @media (max-width: 480px) {
     /* Ajustar o cabeçalho */
+    
     header {
         flex-direction: column;
         padding: 10px;
@@ -275,7 +276,8 @@ footer p {
     MARGIN-LEFT: 10PX;
     width: 30%;
     height: 30PX;
-}
+        
+    }
 
     .btn {
        
@@ -288,9 +290,10 @@ footer p {
 
     .user-info {
     
-    MARGIN-LEFT: 115PX;
+    MARGIN: AUTO;
     font-size: 12px;   
     }
+    
     .modal-content {
         width: 90%; /* Ajusta o modal para dispositivos móveis */
     }
@@ -301,31 +304,7 @@ footer p {
 }
     
     
-   table {
-        width: 100%; /* Garantir que a tabela use 100% da largura da tela */
-        overflow-x: auto; /* Adicionar rolagem horizontal se necessário */
-        margin: 10px;
-    }
-
-    table th {
-        padding: 5px; /* Ajustando o padding para caber melhor na tela */
-    }
-    
-    table td {
-    padding: 5px;
-    height:10px;
-    
-    } 
-
-   
-
-    .modal-content {
-        width: 90%;
-    }
-
-    footer {
-        font-size: 18px;
-    }
+  
 }
 
 /* Para tablets (481px — 768px) */
