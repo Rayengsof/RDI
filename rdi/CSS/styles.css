@@ -261,8 +261,8 @@ footer p {
 
     /* Ajustar a tabela */
     table {
-        width: 97%; /* Garante que a tabela ocupe toda a largura da tela */
-        margin: 10px 0px; /* Ajusta a margem para não ficar colado nas bordas */
+        width: 96%; /* Garante que a tabela ocupe toda a largura da tela */
+        margin: 4px; /* Ajusta a margem para não ficar colado nas bordas */
         overflow-x: auto; /* Permite rolagem horizontal */
         box-sizing: border-box; /* Garante que o padding não afete a largura */
     }
