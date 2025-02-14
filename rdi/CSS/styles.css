@@ -9,7 +9,7 @@ html {
     touch-action: manipulation; /* Desabilita o zoom por gestos */
 }
 
-/* Barra superior */
+
 header {
     border-radius: 10px;
     display: flex;
@@ -23,7 +23,7 @@ header {
     HEIGHT: 60PX;
 }
 
-/* Título centralizado */
+
 .h1 {
     margin: 0;
     flex-grow: 1;
@@ -32,31 +32,19 @@ header {
     
 }
 
-/* Contêiner para as informações do usuário e o botão */
+
 .user-info {
     display: flex;
     align-items: center;
 }
 
-/* Nome do usuário alinhado à esquerda */
+
 .align-left {
     margin: 0;
     padding-right: 10px;
     text-align: left;
 }
 
-/* Estilos do botão de logout */
-/*.logout-btn {
-    background-color: #f44336;
-    color: white;
-    border: none;
-    border-radius: 15px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    padding: 10px 20px;
-    width: 100px;
-}*/
 
 .logout-btn {
     background-color: #f44336;
@@ -72,7 +60,7 @@ header {
 }
 
 
-/* Hover para o botão */
+
 .logout-btn:hover {
     background-color: #e53935;
 }
@@ -94,16 +82,16 @@ header {
     width: auto;
 }
 
-/* Tabela */
+
 table {
-    width: 90%; /* Definindo 100% para garantir que ocupe toda a largura da tela */
+    width: 90%; 
     margin: 20px auto;    
     font-size: 15px;
     border-radius: 5px 5px 5px 5px;
     border-collapse: collapse;
     background-color: white;    
     box-shadow: -7px 9px 4px rgba(0, 0, 0, 0.1);
-    overflow-x: auto; /* Permite rolar horizontalmente em telas pequenas */
+    overflow-x: auto; 
 }
 
  table td {
@@ -123,7 +111,7 @@ table th {
    
 }
 
-/* Botões */
+
 .btn {
     padding: 10px 20px;
     background-color: #28a745;
@@ -225,9 +213,7 @@ footer p {
     margin: 0;
 }
 
-/* Media Queries */
 
-/* Para dispositivos móveis (320px — 480px) */
 @media (max-width: 480px) {
     /* Ajustar o cabeçalho */
     
@@ -259,17 +245,17 @@ footer p {
         margin-left: 0;
     }
 
-    /* Ajustar a tabela */
+   
     table {
-        width: 96%; /* Garante que a tabela ocupe toda a largura da tela */
-        margin: 4px; /* Ajusta a margem para não ficar colado nas bordas */
-        overflow-x: auto; /* Permite rolagem horizontal */
-        box-sizing: border-box; /* Garante que o padding não afete a largura */
+        width: 97%;
+        margin: 10PX 10PX 10PX 7px;
+        overflow-x: auto; 
+        box-sizing: border-box; 
     }
 
     table th, table td {
-        padding: 5px; /* Ajusta o padding para caber melhor em telas pequenas */
-        font-size: 10px; /* Reduz o tamanho da fonte */
+        padding: 5px; 
+        font-size: 10px; 
     }
 
     #btnAdd {
@@ -295,11 +281,11 @@ footer p {
     }
     
     .modal-content {
-        width: 90%; /* Ajusta o modal para dispositivos móveis */
+        width: 90%; 
     }
 
     footer {
-        font-size: 16px; /* Ajusta o tamanho da fonte do rodapé */
+        font-size: 16px; 
     }
 }
     
@@ -307,7 +293,7 @@ footer p {
   
 }
 
-/* Para tablets (481px — 768px) */
+
 @media (min-width: 481px) and (max-width: 768px) {
     header {
         flex-direction: row;
@@ -347,7 +333,7 @@ footer p {
     }
 }
 
-/* Para telas pequenas e laptops (769px — 1024px) */
+
 @media (min-width: 769px) and (max-width: 1024px) {
     header {
         flex-direction: row;
@@ -385,7 +371,7 @@ footer p {
     }
 }
 
-/* Para desktops e telas grandes (1025px — 1200px) */
+
 @media (min-width: 1025px) and (max-width: 1200px) {
     header {
         flex-direction: row;
@@ -423,7 +409,7 @@ footer p {
     }
 }
 
-/* Para telas muito grandes (1201px e acima) */
+
 @media (min-width: 1201px) {
     header {
         flex-direction: row;
