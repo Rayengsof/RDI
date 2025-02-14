@@ -230,6 +230,12 @@ footer p {
         font-size: 11px; /* Reduz o tamanho da fonte */
     }
 
+    #btnAdd {
+    MARGIN-LEFT: 10PX;
+    width: 30%;
+    height: 30PX;
+}
+
     .btn {
         width: 100%; /* Garante que os botões fiquem lado a lado e não empilhem */
         padding: 2px 0;
