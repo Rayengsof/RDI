@@ -232,7 +232,7 @@ footer p {
     }
 
     table th, table td {
-        padding: 8px; /* Ajusta o padding para caber melhor em telas pequenas */
+        padding: 5px; /* Ajusta o padding para caber melhor em telas pequenas */
         font-size: 11px; /* Reduz o tamanho da fonte */
     }
 
