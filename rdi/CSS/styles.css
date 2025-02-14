@@ -233,7 +233,7 @@ footer p {
 
     /* Ajustar a tabela */
     table {
-        width: 95%; /* Garante que a tabela ocupe toda a largura da tela */
+        width: 93%; /* Garante que a tabela ocupe toda a largura da tela */
         margin: 10px 0; /* Ajusta a margem para não ficar colado nas bordas */
         overflow-x: auto; /* Permite rolagem horizontal */
         box-sizing: border-box; /* Garante que o padding não afete a largura */
@@ -241,7 +241,7 @@ footer p {
 
     table th, table td {
         padding: 5px; /* Ajusta o padding para caber melhor em telas pequenas */
-        font-size: 11px; /* Reduz o tamanho da fonte */
+        font-size: 10px; /* Reduz o tamanho da fonte */
     }
 
     #btnAdd {
