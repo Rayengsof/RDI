@@ -80,8 +80,9 @@ header {
 
 /* Tabela */
 table {
-    width: 100%; /* Definindo 100% para garantir que ocupe toda a largura da tela */
+    width: 90%; /* Definindo 100% para garantir que ocupe toda a largura da tela */
     margin: 20px auto;
+    font-size: 12px;
     border-collapse: collapse;
     background-color: white;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -89,7 +90,7 @@ table {
 }
 
 table th, table td {
-    padding: 12px;
+    padding: 2px;
     text-align: left;
     border-bottom: 1px solid #ddd;
 }
