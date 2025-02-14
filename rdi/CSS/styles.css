@@ -239,6 +239,10 @@ footer p {
         font-size: 10px;
     }
 
+    .user-info {
+    
+    MARGIN-LEFT: 115PX;
+
     .modal-content {
         width: 90%; /* Ajusta o modal para dispositivos móveis */
     }
