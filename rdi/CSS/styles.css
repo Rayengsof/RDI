@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
+    margin: 8px;
     padding: 0;
     background-color: #e3e3e3;
 }
@@ -11,6 +11,7 @@ html {
 
 /* Barra superior */
 header {
+    border-radius: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -81,8 +82,9 @@ header {
 /* Tabela */
 table {
     width: 90%; /* Definindo 100% para garantir que ocupe toda a largura da tela */
-    margin: 20px auto;
-    font-size: 12px;
+    margin: 20px auto;    
+    font-size: 15px;
+    border-radius: 9px;
     border-collapse: collapse;
     background-color: white;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
