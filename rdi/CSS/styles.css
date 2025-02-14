@@ -20,6 +20,7 @@ header {
     padding: 10px;
     position: relative;
     flex-wrap: wrap;
+    HEIGHT: 60PX;
 }
 
 /* Título centralizado */
@@ -235,7 +236,6 @@ footer p {
         width: 95%; /* Corrige a largura do header */
     }
 
- @media (max-width: 480px) {
    
      .logout-btn {
         width: 60px; /* Largura reduzida do botão */
