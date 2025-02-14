@@ -221,10 +221,16 @@ footer p {
         width: 95%; /* Corrige a largura do header */
     }
 
-    .logout-btn {
-        WIDTH: 60PX;
-        margin-left: 35px;
-        font-size: 12px;
+  .logout-btn {
+        width: 60px; /* Reduz a largura do botão */
+        height: 30px; /* Ajuste de altura para o botão */
+        margin-left: auto; /* Posiciona o botão à direita */
+        margin-right: 10px; /* Adiciona uma margem à direita para afastar um pouco da borda */
+        font-size: 12px; /* Tamanho da fonte */
+        text-align: center; /* Centraliza o texto dentro do botão */
+        display: flex;
+        justify-content: center; /* Centraliza horizontalmente o texto */
+        align-items: center; /* Centraliza verticalmente o texto */
     }
 
     .h1 {
