@@ -438,12 +438,12 @@ footer p {
     }
 
     table th, table td {
-        padding: 16px;
+        padding: 10px;
     }
 
     .btn {
         width: 90%;
-        padding: 16px 24px;
+        padding: 10px 10px;
     }
 
     .modal-content {
