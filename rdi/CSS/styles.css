@@ -232,8 +232,10 @@ footer p {
 
     .btn {
         width: 100%; /* Garante que os botões fiquem lado a lado e não empilhem */
-        padding: 12px 0;
-        margin: 5px 0; /* Garante que os botões tenham espaço suficiente */
+        padding: 2px 0;
+        margin: 3px 3PX;
+        width: 60%;
+        height: 40%;
     }
 
     .modal-content {
@@ -260,14 +262,9 @@ footer p {
     padding: 5px;
     height:10px;
     
-    }
-   
+    } 
 
-    .btn {
-        width: 75%;
-        height: 50%;
-        padding: 12px 0;
-    }
+   
 
     .modal-content {
         width: 90%;
@@ -303,8 +300,10 @@ footer p {
     }
 
     .btn {
-        width: auto;
-        padding: 10px 20px;
+        
+     width: 42%;
+    height: 70%;
+    padding: 12px 3PX;
     }
 
     .modal-content {
@@ -341,7 +340,7 @@ footer p {
     }
 
     .btn {
-        width: 90%;
+        width: 48%;
         padding: 12px 20px;
     }
 
@@ -379,7 +378,7 @@ footer p {
     }
 
     .btn {
-        width: auto;
+        width: 50%;
         padding: 14px 20px;
     }
 
