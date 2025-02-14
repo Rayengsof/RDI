@@ -212,6 +212,11 @@ footer p {
         width: 100%; /* Corrige a largura do header */
     }
 
+    .logout-btn {
+        WIDTH: 70PX;
+        margin-left: 30px;
+    }
+
     .h1 {
         font-size: 18px;
         margin-left: 0;
