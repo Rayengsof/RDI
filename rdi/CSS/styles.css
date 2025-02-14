@@ -84,10 +84,11 @@ table {
     width: 90%; /* Definindo 100% para garantir que ocupe toda a largura da tela */
     margin: 20px auto;    
     font-size: 15px;
-    border-radius: 9px;
+    border-radius: 5px 5px 5px 5px;
     border-collapse: collapse;
     background-color: white;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    
+    box-shadow: -7px 9px 4px rgba(0, 0, 0, 0.1);
     overflow-x: auto; /* Permite rolar horizontalmente em telas pequenas */
 }
 
@@ -404,7 +405,7 @@ footer p {
     }
 
     .btn {
-        width: 50%;
+        width: 40%;
         padding: 14px 20px;
     }
 
