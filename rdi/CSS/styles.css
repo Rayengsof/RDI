@@ -45,7 +45,7 @@ header {
 }
 
 /* Estilos do botão de logout */
-.logout-btn {
+/*.logout-btn {
     background-color: #f44336;
     color: white;
     border: none;
@@ -55,7 +55,21 @@ header {
     transition: background-color 0.3s ease;
     padding: 10px 20px;
     width: 100px;
+}*/
+
+.logout-btn {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    padding: 10px 20px;
+    width: 100px; /* Ajuste de largura */
+    position: relative; /* Posicionamento padrão */
 }
+
 
 /* Hover para o botão */
 .logout-btn:hover {
@@ -221,17 +235,23 @@ footer p {
         width: 95%; /* Corrige a largura do header */
     }
 
-  .logout-btn {
-        width: 60px; /* Reduz a largura do botão */
-        height: 30px; /* Ajuste de altura para o botão */
+ @media (max-width: 480px) {
+   
+     .logout-btn {
+        width: 60px; /* Largura reduzida do botão */
+        height: 30px; /* Altura reduzida */
+        font-size: 12px; /* Reduz o tamanho da fonte */
         margin-left: auto; /* Posiciona o botão à direita */
-        margin-right: 10px; /* Adiciona uma margem à direita para afastar um pouco da borda */
-        font-size: 12px; /* Tamanho da fonte */
+        margin-right: 0; /* Remove margem extra, para não ficar distante */
         text-align: center; /* Centraliza o texto dentro do botão */
         display: flex;
-        justify-content: center; /* Centraliza horizontalmente o texto */
-        align-items: center; /* Centraliza verticalmente o texto */
+        justify-content: center; /* Centraliza horizontalmente */
+        align-items: center; /* Centraliza verticalmente */
+        position: absolute; /* Garante que o botão fique fixado no canto direito */
+        right: 10px; /* Coloca o botão a 10px do lado direito da tela */
+        bottom: 10px; /* Coloca o botão a 10px do fundo da tela */
     }
+
 
     .h1 {
         font-size: 18px;
@@ -270,7 +290,7 @@ footer p {
     
     MARGIN-LEFT: 115PX;
     font-size: 12px;   
-
+    }
     .modal-content {
         width: 90%; /* Ajusta o modal para dispositivos móveis */
     }
