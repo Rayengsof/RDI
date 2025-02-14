@@ -222,8 +222,9 @@ footer p {
     }
 
     .logout-btn {
-        WIDTH: 65PX;
-        margin-left: 30px;
+        WIDTH: 60PX;
+        margin-left: 35px;
+        font-size: 12px;
     }
 
     .h1 {
