@@ -212,11 +212,11 @@ footer p {
     header {
         flex-direction: column;
         padding: 10px;
-        width: 100%; /* Corrige a largura do header */
+        width: 95%; /* Corrige a largura do header */
     }
 
     .logout-btn {
-        WIDTH: 70PX;
+        WIDTH: 65PX;
         margin-left: 30px;
     }
 
@@ -227,7 +227,7 @@ footer p {
 
     /* Ajustar a tabela */
     table {
-        width: 100%; /* Garante que a tabela ocupe toda a largura da tela */
+        width: 95%; /* Garante que a tabela ocupe toda a largura da tela */
         margin: 10px 0; /* Ajusta a margem para não ficar colado nas bordas */
         overflow-x: auto; /* Permite rolagem horizontal */
         box-sizing: border-box; /* Garante que o padding não afete a largura */
@@ -248,7 +248,7 @@ footer p {
         width: 100%; /* Garante que os botões fiquem lado a lado e não empilhem */
         padding: 2px 0;
         margin: 3px 3PX;
-        width: 60%;
+        width: 65%;
         height: 40%;
         font-size: 10px;
     }
@@ -256,6 +256,7 @@ footer p {
     .user-info {
     
     MARGIN-LEFT: 115PX;
+    font-size: 12px;   
 
     .modal-content {
         width: 90%; /* Ajusta o modal para dispositivos móveis */
